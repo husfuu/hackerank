@@ -7,7 +7,6 @@ import (
 )
 
 func timeConversions(s string) string {
-	// input sample: 07:05:45PM
 	components := strings.Split(s, ":")
 	hour, _ := strconv.Atoi(components[0])
 	minute, _ := strconv.Atoi(components[1])
