@@ -10,8 +10,9 @@ class SinglyLinkedList:
     def insert_node(self, node_data):
         node = SinglyLinkedListNode(node_data)
         if not self.head:
+            # jika self.head == none
             self.head = node
-        else:
+        else: # jika self.head != none, maka tambahkan "next"-nya
             self.tail.next = node
         
         self.tail = node
